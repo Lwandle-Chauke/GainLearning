@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="_images/gain logo.png" alt="Gain Learning Logo" height="60px" width="120px">
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="market.html">Our Market</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+   <!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="section-title">
+            <h2 style="margin-top: -60px;">Contact Us</h2>
+        </div>
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="https://formsubmit.co/info@gain-learning.co.za" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+
+                <!-- Disable captcha (optional) -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Optional: Redirect after submission -->
+                <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer id="market">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+               <div class="contact-details">
+                 <p><i class="fas fa-envelope"></i> 
+                   <a href="mailto:info@gain-learning.co.za" style="color: white;">info@gain-learning.co.za</a>
+                 </p>
+                 <p><i class="fas fa-globe"></i></a> www.gain-learning.co.za</p>
+               </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Our Market</h3>
+                <ul>
+                    <li><a href="market.html">Unemployed individuals</a></li>
+                    <li><a href="market.html">Employed individuals</a></li>
+                    <li><a href="market.html">Entrepreneurs</a></li>
+                    <li><a href="market.html">First-time job entrants</a></li>
+                    <li><a href="market.html">Post-school youth</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Training Programs</h3>
+                <ul>
+                    <li><a href="services.html">Coding and Robotics</a></li>
+                    <li><a href="services.html">Cloud Computing</a></li>
+                    <li><a href="services.html">End User Computing</a></li>
+                    <li><a href="services.html">Cyber Security</a></li>
+                    <li><a href="services.html">Project Management</a></li>
+                    <li><a href="services.html">Business Administration</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="market.html">Our Market</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 GAIN Learning Today Leading Tomorrow | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('nav ul');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+            });
+        }
+
+    </script>
+</body>
+</html>
