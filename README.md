@@ -1,7 +1,3 @@
-Got it! Since you redesigned the **Gain Learning** website and want a professional README for your GitHub repo, here's a strong draft:
-
----
-
 # Gain Learning Website (Redesign)
 
 ## Overview
